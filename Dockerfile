@@ -6,7 +6,7 @@ ARG AWS_VERSION="1.16.234"
 ARG HELM_VERSION="v2.14.3"
 
 RUN apk update \
- &&  apk add ca-certificates curl py-pip py2-pip git \
+ &&  apk add ca-certificates curl py-pip py2-pip git bash \
  &&  pip install --upgrade pip "awscli==${AWS_VERSION}" \
  &&  curl --silent -L https://get.helm.sh/helm-${HELM_VERSION}-linux-amd64.tar.gz | tar xz -C /tmp \
  &&  mv /tmp/linux-amd64/helm /usr/local/bin/helm \
