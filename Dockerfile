@@ -16,3 +16,5 @@ RUN apk update \
  &&  rm /var/cache/apk/* \
  &&  rm -rf /tmp/*
 
+RUN helm init --client-only
+
