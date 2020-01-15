@@ -2,7 +2,7 @@ FROM alpine
 
 MAINTAINER Vasco Santos <jvosantos@gmail.com>
 
-ARG AWS_VERSION="1.16.296"
+ARG AWS_VERSION="1.16.297"
 ARG HELM_VERSION="v2.15.2"
 
 RUN apk update \
